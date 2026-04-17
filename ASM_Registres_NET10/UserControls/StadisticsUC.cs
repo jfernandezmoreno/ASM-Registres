@@ -570,7 +570,7 @@ namespace ASM_Registres.UserControls
         {
             string details = BuildExceptionReport(stage, ex, context);
 
-            string logDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "logs");
+            string logDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ASM_Registres", "logs");
             string logPath = Path.Combine(logDir, $"ASM_Registres_{DateTime.Now:yyyyMMdd}.log");
 
             try

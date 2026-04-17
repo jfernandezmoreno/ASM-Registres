@@ -55,7 +55,7 @@ namespace ASM_Registres.Forms
 
             try
             {
-                string fileName = Path.Combine(Application.StartupPath, "Tareas.pdf");
+                string fileName = Path.Combine(Path.GetTempPath(), "Tareas.pdf");
 
                 using (FileStream fs = new FileStream(fileName, FileMode.Create, FileAccess.Write, FileShare.None))
                 {
@@ -216,7 +216,7 @@ namespace ASM_Registres.Forms
 
             try
             {
-                string fileName = Path.Combine(Application.StartupPath, "Tareas.pdf");
+                string fileName = Path.Combine(Path.GetTempPath(), "Tareas.pdf");
 
                 using (FileStream fs = new FileStream(fileName, FileMode.Create, FileAccess.Write, FileShare.None))
                 {
@@ -385,7 +385,7 @@ namespace ASM_Registres.Forms
 
             try
             {
-                string fileName = Path.Combine(Application.StartupPath, "Tasques.pdf");
+                string fileName = Path.Combine(Path.GetTempPath(), "Tasques.pdf");
 
                 using (FileStream fs = new FileStream(fileName, FileMode.Create, FileAccess.Write, FileShare.None))
                 {
