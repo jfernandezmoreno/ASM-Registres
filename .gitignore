@@ -1,0 +1,52 @@
+# ===== .NET build output =====
+bin/
+obj/
+**/Publish/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio / IDE
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Rider / JetBrains
+.idea/
+
+# VS Code
+.vscode/
+
+# ===== Secrets / credentials (DO NOT COMMIT) =====
+ASM_Registres_NET10/Constants/DatabaseCredentials.cs
+**/appsettings.*.json
+!**/appsettings.json
+*.pfx
+*.snk
+telerik-license.txt
+
+# ===== Installer output =====
+Setup/Output/
+
+# ===== Local test / crash artifacts =====
+crash.log
+*.log
+
+# ===== OS / misc =====
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+.DS_Store
